@@ -1,0 +1,431 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+  #header{
+    height: 5rem;
+    background-color: rgb(4, 45, 92);
+  }
+  .header__left{
+    margin: 1rem;
+    width: 20%;
+  }
+  .header__left-logo-img{
+    height: 2rem;
+    margin-top: 0.5rem;
+  }
+  .header__left-logo-text{
+    padding: 0.5rem;
+    font-weight: 800;
+    color: #fff;
+  }
+  /* header__center */
+  .header__center{
+    width: 40%;
+    position: absolute;
+    left: 15em;
+    top: 2rem;
+  }
+  /* drop down header */
+  ul{
+      list-style-type: none;
+      display: flex;
+      padding: 0;
+    }
+  li a{
+      display: inline-block;
+      text-decoration: none;
+      padding: 15px;
+      color: white;
+    }
+  li a:hover ,.header__center-dropdown:hover{
+    color: rgb(65, 149, 245);
+    }
+    li{
+      float: left;
+      position: relative;
+    }
+    .header__center-dropdown-content{
+      position:absolute;
+      left: 0;
+      top: 100%;
+      display: none;
+      width: 160px;
+    }
+    .header__center-dropdown-content a{
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+      background-color: rgba(3, 53, 78, 0.824);
+    }
+    .header__center-dropdown-content a:hover{
+      background-color: rgb(62, 149, 216);
+      color: #fff;
+    }
+    .header__center-dropdown:hover .header__center-dropdown-content{
+      display: block;
+      z-index: 1;
+    }
+    /* header__right */
+    .header__right{
+      width: 40%;
+      position: absolute;
+      top: 2rem;
+      right: 0rem;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    input[name=search]{
+      width: 15rem;
+      padding: 0.7rem;
+      border-radius: 2rem;
+      border: none;
+    }
+    .header__right-login, .header__right-signup{
+      padding: 1rem;
+      margin-right: 1rem;
+      border-radius: 1rem;
+      background-color: rgb(65, 149, 245);
+      border: none;
+      transition: all 0.5s;
+      color: #fff;
+    }
+    .header__right-login:hover, .header__right-signup:hover{
+      background-color: rgb(42, 176, 212);
+      scale: 1.1;
+    }
+    /* Body */
+    /* body__blog page */
+    .body{
+        padding: 2rem;
+    }
+    .body__blog-page-title{
+        height: 10rem;
+        background-color: rgb(4, 45, 92);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+    }
+    .body__blog-page-title-name{
+        display: flex;
+        align-items: center;
+    }
+    .body__blog-page-img{
+        width: 100%;
+        padding: 4rem;
+    }
+    .body__blog-page-des{
+        text-align: justify;
+        font-size: 20px;
+        padding: 4rem;
+    }
+
+  
+  /* footer */
+  .footer{
+    margin-top: 3rem;
+    background-color: rgb(4, 45, 92);
+    height: 15rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+  }
+  /* footer left */
+  .footer__left{
+    width: 20%;
+  }
+  .footer__left-logo{
+    height: 30px;
+    padding-left: 0.5rem;
+  }
+  .footer__left-text{
+    padding: 0.5rem;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  /* footer center */
+  .footer__center{
+    width: 20%;
+  }
+  #footer__center-title{
+    padding:0 1rem 1rem 1rem;
+    padding-left: 0rem;
+  }
+  /* footer right */
+  .footer__right{
+    width: 30%;
+  }
+  .footer__right-title{
+    padding:0 1rem 1rem 1rem;
+  }
+  .footer__center-contact{
+    padding-left: 1rem;
+    font-size: 17px;
+    color: #fff;
+  }
+  .footer__center-call,.footer__center-gmail{
+    padding-top: 1rem;
+  }
+  .footer__center-social-each-icon{
+    padding: 0.5rem;
+    font-size: 20px;
+    color: #fff;
+  }
+
+ /* responsive for tablets or ipads portrait mode */
+ @media (min-width: 768px) and (max-width: 1024px){
+  /* body {
+      background-color: blue;
+  } */
+    /* header */
+    .header__left{
+      width: 30%;
+    }
+    .header__left-logo-img{
+      width: 60%;
+    }
+    .header__center{
+      width: 100%;
+      position: absolute;
+      left: 17rem;
+      top: 3.5rem;
+    }
+    .header__right-search{
+      position: absolute;
+      top: -0.5rem;
+      left: -13rem;
+    }
+    .header__right-login, .header__right-signup{
+      position: absolute;
+      left: 7rem;
+      padding: 0.5rem;
+      top: 0rem;
+    }
+     .header__right-signup{
+      left:12rem;
+    }
+    /* footer */
+    .footer{
+      padding: 1rem;
+      height: 17rem;
+    }
+    .footer__left-logo{
+      width: 100%;
+    }
+    .footer__left-text{
+      font-size: 20px;
+    }
+    .footer__center{
+      width: 40%;
+      position: relative;
+      left: 3rem;
+    }
+    #footer__center-title{
+      font-size: 20px;
+      padding: 0;
+      margin: 0px;
+      position: relative;
+      left: -5rem;
+      display: flex;
+      justify-content: center;
+    }
+    .footer__center-social-each-icon{
+      font-size:15px;
+      padding: 5px;
+    }
+    .footer__center-call, .footer__center-contact, .footer__center-gmail{
+      font-size: 15px;
+    }
+    .footer__center-gmail{
+      position: relative;
+      top: 0rem;
+      right: 5px;
+    }
+    .footer__right-title{
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+    .footer__right-des{
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 480px) {
+    /* body {
+        background-color: red;
+    } */
+  /* header */
+  .header__left{
+    width: 30%;
+  }
+  .header__left-logo-text{
+    display: none;
+  }
+  .header__left-logo-img{
+    width: 90%;
+  }
+  .header__center{
+    width: 100%;
+    position: absolute;
+    left: 0rem;
+    top: 3.5rem;
+    font-size: 13px;
+  }
+  input[name=search]{
+    width: 10rem;
+    position: relative;
+    left: 1rem;
+  }
+  .header__right-search{
+    position: absolute;
+    top: -0.5rem;
+    left: -7rem;
+  }
+  .header__right-login, .header__right-signup{
+    position: absolute;
+    left: 5rem;
+    padding: 0.3rem;
+    top: -0.9rem;
+  }
+  .header__right-signup{
+    left:4.5rem;
+    top: 1rem;
+  }
+  /* footer */
+  .footer{
+    padding: 1rem;
+  }
+  .footer__left-logo{
+    width: auto;
+  }
+  .footer__left-text{
+    font-size: 15px;
+  }
+  .footer__center{
+    width: 40%;
+    position: relative;
+    top: 2rem;
+  }
+  #footer__center-title{
+    font-size: 15px;
+    padding: 0;
+    margin: 3px;
+  }
+  .footer__center-social-each-icon{
+    font-size: 15px;
+    padding: 1px;
+  }
+  .footer__center-call, .footer__center-contact, .footer__center-gmail{
+    font-size: 13px;
+  }
+  .footer__center-gmail{
+    position: relative;
+    top: 1.1rem;
+    right: 5px;
+  }
+  .footer__right-title{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .footer__right-des{
+    font-size: 9px;
+  }
+  .body{
+  padding: 0;
+  }
+  .body__blog-page-des{padding: 10px
+  }
+  .body__blog-page-title{padding-left: 15px;}
+  .body__blog-page-img{
+    padding-bottom: 0;
+  }
+  .body__blog-page-des{padding-top: 10px;}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* body {
+    background-color: yellow;
+} */
+  /* header */
+  .header__left{
+    width: 30%;
+  }
+  .header__left-logo-text{
+    font-size: 13px;
+  }
+  .header__left-logo-img{
+    width: 60%;
+  }
+  .header__center{
+    width: 100%;
+    position: absolute;
+    left: 10rem;
+    top: 3.5rem;
+  }
+  .header__right-search{
+    position: absolute;
+    top: -0.5rem;
+    left: -13rem;
+  }
+  .header__right-login, .header__right-signup{
+    position: absolute;
+    left: 4rem;
+    padding: 0.5rem;
+    top: 0rem;
+  }
+   .header__right-signup{
+    left:7.5rem;
+  }
+      /* footer */
+      .footer{
+        padding: 1rem;
+      }
+      .footer__left-logo{
+        width: 100%;
+      }
+      .footer__left-text{
+        font-size: 20px;
+      }
+      .footer__center{
+        width: 40%;
+        position: relative;
+        left: 3rem;
+      }
+      #footer__center-title{
+        font-size: 20px;
+        padding: 0;
+        margin: 0px;
+      }
+      .footer__center-social-each-icon{
+        font-size:20px;
+        padding: 5px;
+      }
+      .footer__center-call, .footer__center-contact, .footer__center-gmail{
+        font-size: 15px;
+      }
+      .footer__center-gmail{
+        position: relative;
+        top: 0rem;
+        right: 5px;
+      }
+      .footer__right-title{
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 5px;
+        position: relative;
+        left: 0rem;
+      }
+      .footer__right-des{
+        font-size: 12px;
+        position: relative;
+        left: 0rem;
+      }
+      .body__blog-page-des{padding: 1rem;}
+    }

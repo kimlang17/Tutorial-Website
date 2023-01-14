@@ -1,0 +1,892 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+#header{
+  height: 5rem;
+  background-color: rgb(4, 45, 92);
+}
+.header__left{
+  margin: 1rem;
+  width: 20%;
+}
+.header__left-logo-img{
+  height: 2rem;
+  margin-top: 0.5rem;
+}
+.header__left-logo-text{
+  padding: 0.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+/* header__center */
+.header__center{
+  width: 40%;
+  position: absolute;
+  left: 15em;
+  top: 2rem;
+}
+/* drop down header */
+ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+  }
+li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+  }
+li a:hover ,.header__center-dropdown:hover{
+  color: rgb(65, 149, 245);
+  }
+  li{
+    float: left;
+    position: relative;
+  }
+  .header__center-dropdown-content{
+    position:absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    width: 160px;
+  }
+  .header__center-dropdown-content a{
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    background-color: rgba(3, 53, 78, 0.824);
+  }
+  .header__center-dropdown-content a:hover{
+    background-color: rgb(62, 149, 216);
+    color: #fff;
+  }
+  .header__center-dropdown:hover .header__center-dropdown-content{
+    display: block;
+    z-index: 1;
+  }
+  /* header__right */
+  .header__right{
+    width: 40%;
+    position: absolute;
+    top: 2rem;
+    right: 0rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  input[name=search]{
+    width: 15rem;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    border: none;
+  }
+  .header__right-login, .header__right-signup{
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(65, 149, 245);
+    border: none;
+    transition: all 0.5s;
+    color: #fff;
+  }
+  .header__right-login:hover, .header__right-signup:hover{
+    background-color: rgb(42, 176, 212);
+    scale: 1.1;
+  }
+  /* Body */
+  /* body__banner */
+  .body__banner{
+    position: relative;
+    top: 0.1rem;
+    background-color: rgb(4, 45, 92);
+    display: flex;
+  }
+  .body__banner-left{
+    width: 50%;
+    height: 25rem;
+    position: relative;
+    top: 5rem;
+    left: 3rem;
+    color: #fff;
+  }
+  .body__banner-left-title{
+    font-size: 35px;
+  }
+  .body__banner-left-des{
+    font-size: 20px;
+  }
+  .body__banner-left-btn{
+    position: relative;
+    top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .body__banner-left-btn-register,.body__banner-left-btn-courses{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(65, 149, 245);
+    border: 1px solid rgb(4, 45, 92);
+    transition: all 0.5s;
+  }
+  .body__banner-left-btn-register{
+    margin-right: 3rem;
+  }
+.body__banner-left-btn-register:hover,.body__banner-left-btn-courses:hover{
+  background-color: rgb(42, 176, 212);
+  scale: 1.1;
+  }
+/* body banner right */
+.body__banner-right{
+  position: relative;
+  left: 5rem;
+}
+/* Why Us Body */
+.body__whyUs{
+  height: 23rem;
+  display: flex;
+}
+.body__whyUs-left{
+  width: 50%;
+  position: relative;
+  top: 2rem;
+  left: 4rem;
+}
+.body__whyUs-title{
+  color: rgb(4, 45, 92);
+}
+.body__whyUs-des{
+position: relative;
+top: 2rem;
+}
+.body__whyUs-img{
+  height: 13rem;
+  position: relative;
+  top: 3rem;
+  left: 5rem;
+}
+.body__whyUs-right{
+  padding: 2rem;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 10rem 10rem;
+  column-gap: 2rem;
+}
+.body__whyUs-right-box1,.body__whyUs-right-box2,.body__whyUs-right-box3,.body__whyUs-right-box4{
+  width: 10rem;
+  height: 8rem;
+  background-color: rgb(65, 149, 245);
+  border-radius: 1rem;
+  transition: ease 0.5s;
+  position: relative;
+  left: 7rem;
+}
+.body__whyUs-right-box1-title,.body__whyUs-right-box2-title,.body__whyUs-right-box3-title,.body__whyUs-right-box4-title{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+}
+.body__whyUs-right-box1-text{
+  padding: 0 1rem;
+}
+.body__whyUs-right-box1:hover,.body__whyUs-right-box2:hover,.body__whyUs-right-box3:hover,.body__whyUs-right-box4:hover{
+  scale: 1.1;
+}
+/* body__Opinion */
+.body__Opinion{
+  height: 30rem;
+  background-color: rgb(4, 45, 92);
+  color: #fff;
+}
+.body__Opinion-up-title{
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.body__Opinion-down{
+  display: flex;
+  justify-content: space-evenly;
+}
+.body__Opinion-down-box1,.body__Opinion-down-box2,.body__Opinion-down-box3,.body__Opinion-down-box4{
+  width: 15rem;
+  height: 20rem;
+  background-color: rgb(40, 250, 156);
+  color: black;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.body__Opinion-down-name{
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.body__Opinion-down-pf{
+  width: 100%;
+}
+
+/* courses page */
+.body__courses-header{
+  height: 6rem;
+  color: #fff;
+  background-color: rgb(4, 45, 92);
+  margin: 5px;
+}
+.body__courses-header-title,.body__courses-header-des{
+  display: flex;
+  justify-content: center;
+  padding: 0.2rem;
+}
+.body__courses-title{
+  height: 85px;
+}
+h1{
+  margin-bottom: 5px;
+  padding: 0.5rem;
+  display: block;
+  color: #fff;
+  background-color: rgb(4, 45, 92);
+}
+.body__courses-dev-row, .body__about-dev-row, .body__courses-design-row, .body__courses-more-row{
+  margin: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+h3{
+  display: flex;
+  justify-content: center;
+  margin: 1rem
+}
+.body__courses-box,.body__about-box{
+  width: 15rem;
+  height: 20rem;
+  background-color: rgb(216, 213, 213);
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+.body__courses-box:hover ,.body__about-box:hover{
+  background-color: rgb(189, 189, 189);
+  scale: 1.05;
+}
+.body__courses-btn-box-click{
+  text-decoration: none;
+  color: #fff;
+}
+.box__courses-each-box{
+  text-decoration: none;
+  color: black;
+}
+.body__courses-img, .body__about-img{
+  width: 100%;
+  height: 125px;
+}
+.body__courses-rating{
+  margin: 0.5rem;
+}
+.body__courses-rating-star{
+  color: blue;
+}
+.body__courses-btn-box{
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(65, 149, 245);
+  transition: all 0.5s;
+  width: 13rem;
+  margin: 0.5rem 0rem;
+}
+.body__courses-btn-box:hover{
+  background-color: rgb(42, 176, 212);
+}
+
+/* blog page */
+
+
+/* about page */
+.body__about-start-des{
+  padding: 1rem 2rem;
+  font-size: 20px;
+  text-align: justify;
+  background-color: rgb(216, 213, 213);
+  border-radius: 1rem;
+}
+.body__about-partner-all{
+  display:inline-flex;
+  }
+.body__about-partner{
+  width: 15rem;
+  margin: 1rem;}
+.body__about-partner-logo{
+  height: 100px;
+}
+.body__about-partner-name{
+  font-size: 15px;
+}
+td{
+  padding: 1.5rem;
+}
+
+/* log in */
+.body__login, .body__signup{
+  display: flex;
+  justify-content: center;
+}
+.body__login-container, .body__signup-container{
+  margin-top: 2rem;
+  background-color: rgb(4, 45, 92);
+  width: 25rem;
+  height: 30rem;
+  border-radius: 1rem;
+}
+.body__signup-container{
+  height: 37rem;
+}
+.body__login-title ,.body__signup-title{
+  color: #fff;
+  background-color:rgb(62, 149, 216);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.body__login-log ,.body__signup-log{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  color: #fff;
+}
+.body__login-username ,.body__login-password, .body__signup-username ,.body__signup-password{
+  padding: 1rem;
+  margin: 1rem;
+  width: 90%;
+  border-radius: 2rem;
+  border: none;
+}
+.body__login-btn, .body__signup-btn{
+  padding: 1rem;
+  margin-left: 6rem;
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  background-color: aqua;
+  display: block;
+  transition: all 0.4s;
+}
+.body__login-btn:hover, .body__signup-btn:hover{
+  background-color: #000;
+  color: aqua;
+}
+.body__login-create{
+  color: #fff;
+  margin: 8rem;
+  position: relative;
+  top: 2rem;
+}
+
+/* footer */
+.footer{
+  margin-top: 3rem;
+  background-color: rgb(4, 45, 92);
+  height: 15rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+}
+/* footer left */
+.footer__left{
+  width: 20%;
+}
+.footer__left-logo{
+  height: 30px;
+  padding-left: 0.5rem;
+}
+.footer__left-text{
+  padding: 0.5rem;
+  font-size: 20px;
+  font-weight: 700;
+}
+/* footer center */
+.footer__center{
+  width: 20%;
+}
+#footer__center-title{
+  padding:0 1rem 1rem 1rem;
+  padding-left: 0rem;
+}
+/* footer right */
+.footer__right{
+  width: 30%;
+}
+.footer__right-title{
+  padding:0 1rem 1rem 1rem;
+}
+.footer__center-contact{
+  padding-left: 1rem;
+  font-size: 17px;
+  color: #fff;
+}
+.footer__center-call,.footer__center-gmail{
+  padding-top: 1rem;
+}
+.footer__center-social-each-icon{
+  padding: 0.5rem;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* responsive for tablets or ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+  /* body {
+      background-color: blue;
+  } */
+    /* header */
+    .header__left{
+      width: 30%;
+    }
+    .header__left-logo-img{
+      width: 60%;
+    }
+    .header__center{
+      width: 100%;
+      position: absolute;
+      left: 17rem;
+      top: 3.5rem;
+    }
+    .header__right-search{
+      position: absolute;
+      top: -0.5rem;
+      left: -13rem;
+    }
+    .header__right-login, .header__right-signup{
+      position: absolute;
+      left: 10rem;
+      padding: 0.5rem;
+      top: 0rem;
+    }
+     .header__right-signup{
+      left:14rem;
+    }
+    /* footer */
+    .footer{
+      padding: 1rem;
+    }
+    .footer__left-logo{
+      width: 100%;
+    }
+    .footer__left-text{
+      font-size: 20px;
+    }
+    .footer__center{
+      width: 40%;
+      position: relative;
+      left: 3rem;
+    }
+    #footer__center-title{
+      font-size: 20px;
+      padding: 0;
+      margin: 0px;
+      position: relative;
+      left: -5rem;
+    }
+    .footer__center-social-each-icon{
+      font-size:20px;
+      padding: 5px;
+    }
+    .footer__center-call, .footer__center-contact, .footer__center-gmail{
+      font-size: 15px;
+    }
+    .footer__center-gmail{
+      position: relative;
+      top: 0rem;
+      right: 5px;
+    }
+    .footer__right-title{
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+    .footer__right-des{
+      font-size: 14px;
+    }
+
+/* body banner */
+.body__banner-right{
+  width: 40%;
+}
+.body__banner-left-title{
+  font-size: 20px;
+  padding: 0;
+}
+.body__whyUs-des{
+  margin: 0;
+}
+.body__whyUs-left{
+  width: 30%;
+}
+.body__whyUs-img{
+  width: 80%;
+  position: relative;
+  left: 2rem;
+}
+.body__whyUs-right{
+  /* grid-template-columns: 5rem 5rem; */
+  column-gap: 1rem;
+  position: relative;
+  left: 1rem;
+}
+/* body course responsive */
+.body__courses-box{
+  width: 10rem;
+}
+.body__courses-title{
+  font-size: 16px;
+}
+.body__courses-btn-box{
+  position: relative;
+  top: 0rem;
+  width: 90%;
+}
+.body__courses-rating{
+  font-size: 12px;
+}
+.body__courses-rating-star{
+  font-size: 10px;
+}
+.body__about-box{height: 25rem;}
+.body__about-partner-all{display: block;}
+.body__about-partner{margin-left: 20rem;}
+}
+/* responsive for tablets or ipads */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* body {
+    background-color: yellow;
+} */
+  /* header */
+  .header__left{
+    width: 30%;
+  }
+  .header__left-logo-text{
+    font-size: 13px;
+  }
+  .header__left-logo-img{
+    width: 60%;
+  }
+  .header__center{
+    width: 100%;
+    position: absolute;
+    left: 10rem;
+    top: 3.5rem;
+  }
+  .header__right-search{
+    position: absolute;
+    top: -0.5rem;
+    left: -13rem;
+  }
+  .header__right-login, .header__right-signup{
+    position: absolute;
+    left: 4rem;
+    padding: 0.5rem;
+    top: 0rem;
+  }
+   .header__right-signup{
+    left:7.5rem;
+  }
+      /* footer */
+      .footer{
+        padding: 1rem;
+      }
+      .footer__left-logo{
+        width: 100%;
+      }
+      .footer__left-text{
+        font-size: 20px;
+      }
+      .footer__center{
+        width: 40%;
+        position: relative;
+        left: 3rem;
+      }
+      #footer__center-title{
+        font-size: 20px;
+        padding: 0;
+        margin: 0px;
+        position: relative;
+        left: -5rem;
+      }
+      .footer__center-social-each-icon{
+        font-size:20px;
+        padding: 5px;
+      }
+      .footer__center-call, .footer__center-contact, .footer__center-gmail{
+        font-size: 15px;
+      }
+      .footer__center-gmail{
+        position: relative;
+        top: 0rem;
+        right: 5px;
+      }
+      .footer__right-title{
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 5px;
+        position: relative;
+        left: 0rem;
+      }
+      .footer__right-des{
+        font-size: 12px;
+        position: relative;
+        left: 0rem;
+      }
+      .body__about-dev-row{
+        display: block;
+        margin-left: 10rem;
+      }
+      .body__about-box{margin: 1rem;}
+      .body__about-partner-all{
+        display: block;
+        padding-left: 14rem;
+      }
+
+  /* body banner */
+  .body__banner{width: 100%;}
+  .body__banner-left{
+    width: 45%;
+  }
+  .body__banner-right{
+    width: 45%;
+  }
+  .body__banner-left-title{
+    font-size: 18px;
+    padding: 0;
+  }
+  .body__banner-left-des{
+    font-size: 16px;
+  }
+  .body__banner-left-btn-register ,.body__banner-left-btn-courses{
+    margin: 5px;
+  }
+  .body__whyUs-des{
+    margin: 0;
+    position: relative;
+    top: 0.5rem;
+  }
+  .body__whyUs-left{
+    width: 30%;
+  }
+  .body__whyUs-img{
+    width: 60%;
+    position: relative;
+    left: 2rem;
+    top: 1.5rem;
+  }
+  .body__whyUs-right{
+    /* grid-template-columns: 5rem 5rem; */
+    column-gap: 1rem;
+    position: relative;
+    left: -2rem;
+  }
+  .body__Opinion{height: 34rem;}
+  .body__Opinion-down{
+    column-gap: 2%;
+  }
+  .body__Opinion-down-box1, .body__Opinion-down-box2{
+    
+    height: 26rem;
+  }
+  .body__Opinion-down-box3, .body__Opinion-down-box4{
+    height: 26rem;
+  }
+  /* .body__about-box{height: 25rem;} */
+}
+ /* Media Query for Mobile Devices */
+ @media (max-width: 480px) {
+  /* body {
+      background-color: red;
+  } */
+      /* header */
+      .header__left{
+        width: 30%;
+      }
+      .header__left-logo-text{
+        display: none;
+      }
+      .header__left-logo-img{
+        width: 90%;
+      }
+      .header__center{
+        width: 100%;
+        position: absolute;
+        left: 0rem;
+        top: 3.5rem;
+        font-size: 13px;
+      }
+      input[name=search]{
+        width: 10rem;
+        position: relative;
+        left: 1rem;
+      }
+      .header__right-search{
+        position: absolute;
+        top: -0.5rem;
+        left: -7rem;
+      }
+      .header__right-login, .header__right-signup{
+        position: absolute;
+        left: 5rem;
+        padding: 0.3rem;
+        top: -0.9rem;
+      }
+       .header__right-signup{
+        left:4.5rem;
+        top: 1rem;
+      }
+      /* footer */
+      .footer{
+        padding: 1rem;
+      }
+      .footer__left-logo{
+        width: auto;
+      }
+      .footer__left-text{
+        font-size: 15px;
+      }
+      .footer__center{
+        width: 40%;
+        position: relative;
+        top: 2rem;
+      }
+      #footer__center-title{
+        font-size: 15px;
+        padding: 0;
+        margin: 3px;
+      }
+      .footer__center-social-each-icon{
+        font-size: 15px;
+        padding: 1px;
+      }
+      .footer__center-call, .footer__center-contact, .footer__center-gmail{
+        font-size: 13px;
+      }
+      .footer__center-gmail{
+        position: relative;
+        top: 1.1rem;
+        right: 5px;
+      }
+      .footer__right-title{
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 5px;
+      }
+      .footer__right-des{
+        font-size: 9px;
+      }
+      /* body banner */
+  .body__banner{width: 100%;display: block;}
+  .body__banner-left-title{
+    font-size: 17px;
+    padding: 0;
+  }
+  .body__banner-left-des{
+    font-size: 13px;
+  }
+  .body__banner-left-btn{
+    display: flex;
+    width: 20rem;
+  }
+  .body__banner-right{
+    position: relative;
+    top: -22rem;
+    width: 100%;
+    left: 0;
+  }
+  .body__banner-left{
+    position: relative;
+    top: 22rem;
+  }
+  .body__whyUs{
+    display: block;
+    height: 38rem;
+  }
+  .body__whyUs-des{
+    margin: 0;
+    position: relative;
+    top: 0.5rem;
+  }
+  .body__whyUs-left{
+    width: 80%;
+  }
+  .body__whyUs-img{
+    height: 10rem;
+    position: relative;
+    left: 1rem;
+    top: 1.5rem;
+  }
+  .body__whyUs-right{
+    width: 50%;
+    gap: 0.5rem;
+    position: relative;
+    left: -7rem;
+    top: 3rem;
+  }
+  .body__Opinion{height: 51rem;}
+  .body__Opinion-down{
+    column-gap: 0px;
+    row-gap: 5px;
+    display:grid;
+    margin: 1rem;
+  }
+  .body__Opinion-down-box1{
+    width: 95%;
+
+    grid-column: 1/2;
+  } 
+  .body__Opinion-down-box2{
+    width: 95%;
+    grid-column: 2/3;
+  }
+  .body__Opinion-down-box3{
+    width: 95%;
+    grid-column: 1/2;
+  } 
+  .body__Opinion-down-box4{
+    width: 95%;
+    grid-column: 2/3;
+
+  }
+  /* body courses page */
+  .body__courses-header-des{font-size: 12px;}
+  .body__courses-dev-row ,.body__courses-design-row,.body__courses-more-row{
+    display: grid;
+  }
+  .box__courses-each-box{
+    gap: 5px;
+  }
+  .body__courses-box{
+    width: 15rem;
+    margin-bottom: 1rem;
+  }
+  .body__courses-title{font-size: 20px;}
+  .body__courses-rating{font-size: 15px;}
+  .body__courses-rating-star{font-size: 17px;}
+  .body__courses-btn-box{
+    position: relative;
+    left: 0.7rem;
+  }
+  .body__about-dev-row{display: grid; gap: 10px;}
+  .body__about-partner-all{
+    display: inline-block;
+  }
+  .body__about-partner{
+    width: 100%;
+    margin-left: 5rem;
+  }
+}
